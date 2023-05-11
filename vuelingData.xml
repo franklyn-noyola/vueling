@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vueling>
+	<vuelingData> 
+		<from>Barcelona</from>  		              
+		<destination>Madrid</destination>
+	</vuelingData>
+    <vuelingData>
+		<firstname1>Franklyn</firstname1>  
+		<lastname1>Garcia</lastname1>          
+    </vuelingData>  
+    <vuelingData>  	
+		<firstname2>Sheila</firstname2>s
+		<lastname2>Lopez</lastname2>            
+    </vuelingData>  
+    <vuelingData>  	
+		<firstname3>Adan</firstname3>  
+		<lastname3>Garcia</lastname3>            
+    </vuelingData>  
+</vueling>
