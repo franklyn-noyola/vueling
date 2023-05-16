@@ -2,23 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-09T19:47:49 CEST" name="Default suite" finished-at="2023-05-09T19:48:37 CEST" duration-ms="47284">
+  <suite started-at="2023-05-16T21:12:08 CEST" name="Default suite" finished-at="2023-05-16T21:14:28 CEST" duration-ms="140275">
     <groups>
     </groups>
-    <test started-at="2023-05-09T19:47:49 CEST" name="Default test" finished-at="2023-05-09T19:48:37 CEST" duration-ms="47284">
+    <test started-at="2023-05-16T21:12:08 CEST" name="Default test" finished-at="2023-05-16T21:14:28 CEST" duration-ms="140275">
       <class name="vuelingTests.HomePage">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:vuelingTests.HomePage@6892b3b6]" started-at="2023-05-09T19:47:49 CEST" name="setUp" finished-at="2023-05-09T19:47:52 CEST" duration-ms="2968" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:vuelingTests.HomePage@449a4f23]" started-at="2023-05-16T21:12:08 CEST" name="setUp" finished-at="2023-05-16T21:12:11 CEST" duration-ms="3281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:vuelingTests.HomePage@6892b3b6]" started-at="2023-05-09T19:47:52 CEST" name="setUp" finished-at="2023-05-09T19:47:54 CEST" duration-ms="1235" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:vuelingTests.HomePage@449a4f23]" started-at="2023-05-16T21:12:11 CEST" name="setUp" finished-at="2023-05-16T21:12:13 CEST" duration-ms="1563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="homPage()[pri:0, instance:vuelingTests.HomePage@6892b3b6]" started-at="2023-05-09T19:47:54 CEST" name="homPage" finished-at="2023-05-09T19:48:37 CEST" duration-ms="43003" status="PASS">
+        <test-method signature="homPage()[pri:0, instance:vuelingTests.HomePage@449a4f23]" started-at="2023-05-16T21:12:13 CEST" name="homPage" finished-at="2023-05-16T21:14:28 CEST" duration-ms="134810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:vuelingTests.HomePage@449a4f23]" started-at="2023-05-16T21:14:28 CEST" name="tearDown" finished-at="2023-05-16T21:14:28 CEST" duration-ms="532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:vuelingTests.HomePage@449a4f23]" started-at="2023-05-16T21:14:28 CEST" name="tearDown" finished-at="2023-05-16T21:14:28 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- vuelingTests.HomePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

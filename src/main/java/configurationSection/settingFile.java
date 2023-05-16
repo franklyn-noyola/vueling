@@ -1,22 +1,14 @@
 package configurationSection;
 
 import org.openqa.selenium.chrome.*;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import javax.xml.parsers.DocumentBuilderFactory;  
 import javax.xml.parsers.DocumentBuilder;  
 import org.w3c.dom.Document;  
 import org.w3c.dom.NodeList;  
-import org.w3c.dom.Node;  
-import org.w3c.dom.Element;  
 import java.io.File;
 import java.io.FileInputStream;
-
 import static org.testng.Assert.fail;
-
-import java.io.File;
 import java.time.Duration;
 
 
@@ -52,7 +44,8 @@ public class settingFile  {
 	  public void xmlDataReader() throws Exception  {
 		  
 			 try {
-			      FileInputStream vuelingfile = new FileInputStream(new File("vuelingData.xml"));  
+				 
+			      FileInputStream vuelingfile = new FileInputStream(new File("C:\\workspace\\vueling\\vuelingData.xml"));  
 			      //an instance of factory that gives a document builder  
 			      DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();  
 			      //an instance of builder to parse the specified xml file  
@@ -60,18 +53,11 @@ public class settingFile  {
 			      Document doc = db.parse(vuelingfile);  
 			      doc.getDocumentElement();  
 			      NodeList vuelingData = doc.getElementsByTagName("vuelingData");
-			
-			      // vuelingData is not iterable, so we are using for loop  
-			      for (int i = 0; i < vuelingData.getLength(); i++)   
-			      {  
-			    	  Node nodeVueling = vuelingData.item(i);			    	  
-			    	  if (nodeVueling.getNodeType() == Node.ELEMENT_NODE) {
-			    		  Element vuelingElement = (Element) nodeVueling;				
-			    		  from = vuelingElement.getElementsByTagName("from").item(0).getTextContent();
-			    		  destination = vuelingElement.getElementsByTagName("destination").item(0).getTextContent();
-			    	  }
-			      }
-			
+			      
+			      // vuelingData is not iterable, so we are using for loop
+			      from = vuelingData.item(0).getTextContent();
+			      destination = vuelingData.item(1).getTextContent();
+			 
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
